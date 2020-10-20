@@ -15,11 +15,18 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-      <img alt="astronomy photo of the day" src={data.url} />
+      <h1><span>🚀 </span>NASA's Photo of The Day</h1>
+      <input type="date" max="2020-10-20" />
+      <div className="content">
+        <div className="card">
+        <p>{data.date}</p>
+          <h2>{data.title}</h2>
+          <img className="photo" alt="astronomy photo of the day" src={data.url} />
+          <p>
+            {data.explanation}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
