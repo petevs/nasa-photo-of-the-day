@@ -8,7 +8,6 @@ const Card = props => {
 
 return (
     <div className="card">
-    <p>{date}</p>
     <h2>{title}</h2>
     <img className="photo" src={url} alt={title} />
     <p>{explanation}</p>

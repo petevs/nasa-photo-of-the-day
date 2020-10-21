@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
 .App {
   text-align: center;
   background: #0f2027; /* fallback for old browsers */
@@ -16,6 +18,7 @@
 
   color: white;
   min-height: 100vh;
+  font-family: "Orbitron", sans-serif;
 }
 
 .App-logo {
@@ -57,10 +60,17 @@
   padding: 20px;
 }
 
+input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+}
+
 .content {
   display: grid;
-  grid-template-columns: 450px;
+  grid-template-columns: minmax(450px, 650px);
   justify-content: center;
+  padding: 1rem;
 }
 
 .card {
@@ -69,10 +79,16 @@
   color: black;
 }
 
+.card h2 {
+  text-transform: uppercase;
+}
+
 .photo {
   width: 100%;
 }
 
 .card p {
   font-size: 0.9rem;
+  padding: 0.5rem;
+  font-family: arial;
 }
