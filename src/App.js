@@ -3,7 +3,6 @@ import "./App.css";
 import Post from "./components/Post"
 import Header from "./components/Header"
 import axios from "axios";
-import moment from "moment"
 
 function App() {
 
