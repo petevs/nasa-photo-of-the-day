@@ -9,9 +9,9 @@ const Card = props => {
 
 return (
     <PhotoCard>
-    <Title>{title}</Title>
-    <Image className="photo" src={url} alt={title} />
-    <Description>{explanation}</Description>
+        <Title>{title}</Title>
+        <Image className="photo" src={url} alt={title} />
+        <Description>{explanation}</Description>
     </PhotoCard>
 );
 };
