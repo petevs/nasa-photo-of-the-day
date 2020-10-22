@@ -2,15 +2,16 @@ import React from "react";
 import "../App.css";
 import styled from "styled-components"
 
+const newToday = new Date().toISOString().split('T')[0]
+
 const Header = props => {
     const {date, handleDateSelection} = props;
     console.log(date)
 
-
 return (
     <HeaderDiv>
         <Headline><span role="img" aria-label="accessible-emoji">🚀 </span>NASA's Photo of The Day</Headline>
-        <DatePicker value={date} type="date" max={date} onChange={handleDateSelection} />
+        <DatePicker value={date} type="date" max={newToday} onChange={handleDateSelection} />
     </HeaderDiv>
 );
 };
